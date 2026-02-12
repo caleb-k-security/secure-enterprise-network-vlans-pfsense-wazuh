@@ -1,0 +1,20 @@
+# Security Validation Notes
+
+## Objective
+Confirm that segmentation and monitoring controls function correctly.
+
+## Validation Checks
+
+VLAN Isolation
+- Guest VLAN could not access Admin VLAN
+- Staff VLAN blocked from Admin network
+
+Firewall Enforcement
+- pfSense logs confirmed blocked traffic attempts
+
+SIEM Monitoring
+- Endpoint successfully transmitted logs to Wazuh server
+- Dashboard displayed real-time data
+
+## Analyst Conclusion
+Network segmentation and monitoring controls function as designed. Access restrictions, logging visibility, and system health checks confirm a properly secured internal architecture.
