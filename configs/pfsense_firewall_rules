@@ -1,0 +1,22 @@
+# pfSense Firewall Rules Summary
+
+## Implemented Rules
+
+1. Block Guest → Admin
+- Source: Guest VLAN
+- Destination: Admin VLAN
+- Action: Block
+
+2. Block Staff → Admin
+- Source: Staff VLAN
+- Destination: Admin VLAN
+- Action: Block
+
+3. Allow Staff → Internet
+- Source: Staff VLAN
+- Destination: Any
+- Action: Pass
+
+## Notes
+Rules were ordered to ensure block rules were evaluated before allow rules.
+Firewall logging was enabled for verification.
